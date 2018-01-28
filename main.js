@@ -1,0 +1,1 @@
+newQuote = document.getElementsByClassName("newQuote");
