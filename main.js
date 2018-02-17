@@ -17,8 +17,8 @@ newQuote.onclick = function() {
 
  request.onload = function (){
  	var responseText = request.responseText;
- 	quoteText.textContent = responseText.Love[0].quote;
- 	//console.log(response);
+ 	//quoteText.textContent = responseText.Love[0].quote;
+ 	console.log(response);
  }
 };
 
