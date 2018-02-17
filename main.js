@@ -8,7 +8,7 @@ var min = 0;
 var max = 3;
 var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
-URL = "https://github.com/mkamalkayani/randomQuoteMachine/blob/master/motivationalMoments.json";
+URL = "motivationalMoments.json";
 
 newQuote.onclick = function() {
  var request = new XMLHttpRequest();
