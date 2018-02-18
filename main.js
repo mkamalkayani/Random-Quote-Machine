@@ -1,4 +1,4 @@
-var quoteText = document.querySelector('section blockquote p');
+var quoteText = document.querySelector('blockquote p');
 var quoteAuthor = document.querySelector('.blockquote-footer')
 var newQuote = document.querySelector("button.newQuote");
 var HEIGHT = window.innerHeight - 200;
