@@ -1,17 +1,51 @@
+body{
+	font-family: 'EB Garamond', serif;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
 section{
-	max-width: 700px;
+	max-width: 600px;
+	min-width: 300px;
 	margin:auto;
 }
 
-blockquote{
-	background-color: #eee;
-	border: 2px solid blue;
-	margin-top: 150px;
+div .quote{
+	min-height: 200px;
+	text-align: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+}
+
+blockquote p{
+	/*background-color: #eee;*/
+	text-align: center;
+	font-size: 28px;
+	padding: 15px;
+	text-shadow: 1px 1px 0.5px black;
+	margin-bottom: 0;
+
+}
+
+blockquote p:first-of-type:before {
+	content: '\201c';
+	
+}
+
+blockquote p:last-of-type:after {
+	content: '\201d';
+	position: absolute;
+}
+
+.blockquote-footer{
+	text-align: right;
+	font-size: 18px;
 }
 
 button{
-	width: 200px;
-	/*margin: auto;*/
+	width: 110px;
 }
 
 
