@@ -1,29 +1,27 @@
 body{
+	margin: auto;
 	font-family: 'EB Garamond', serif;
-	display: flex;
-	align-items: center;
-	height: 100vh;
 }
 section{
-	max-width: 600px;
-	min-width: 300px;
-	margin:auto;
+	max-width: 720px;
+	min-width: 320px;
+	margin: auto;
 }
 
 div .quote{
 	min-height: 200px;
-	text-align: center;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-direction: column;
+}
+
+.blockquote{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 blockquote p{
-	/*background-color: #eee;*/
 	text-align: center;
-	font-size: 28px;
-	padding: 15px;
+	font-size: 18px;
+	padding: 15px 30px;
+	margin-top: 20px;
 	margin-bottom: 0;
 
 }
@@ -39,12 +37,30 @@ blockquote p:last-of-type:after {
 }
 
 .blockquote-footer{
-	text-align: right;
 	font-size: 18px;
+	text-align: center;
 }
 
-button{
-	width: 110px;
+div.share{
+	display: flex;
+	justify-content: center;
+}
+
+.twitter-share-button, .facebook-share-button{
+	margin: 5px 3px;
+}
+
+.newQuote{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+	blockquote p{
+		margin-top: 80px;
+		font-size: 28px;
+	}
 }
 
 

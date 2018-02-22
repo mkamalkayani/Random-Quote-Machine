@@ -1,7 +1,6 @@
 var quoteText = document.querySelector('blockquote p');
 var quoteAuthor = document.querySelector('.blockquote-footer')
-var newQuote = document.querySelector("button.newQuote");
-//var HEIGHT = window.innerHeight - 200;
+var newQuote = document.querySelector(".newQuote button");
 
 var category = ["Love", "Patience", "Hope", "Good Character"];
 function randomNumber(min=0, max=3){
@@ -28,12 +27,12 @@ function newRequest() {
  	else { 
  		newRequest();
  	}
+
+ 	var twitterHrefURL = "https://twitter.com/intent/tweet?text=" + quoteText.textContent + "&hashtags=" + quoteAuthor.textContent; 
+ 	var twitterLinkElement = document.querySelector("div.twitter-share-button a");
+	twitterLinkElement.setAttribute("href",twitterHrefURL);
  }
 }
 
+newQuote.onclick = newRequest;
 window.onload = newRequest();
-newQuote.onclick = function() { newRequest() };
-
-
-
-
