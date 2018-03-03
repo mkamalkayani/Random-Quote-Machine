@@ -29,7 +29,7 @@ function newRequest() {
  	}
 
  	var twitterHrefURL = "https://twitter.com/intent/tweet?text=" + quoteText.textContent + "&hashtags=" + quoteAuthor.textContent; 
- 	var twitterLinkElement = document.querySelector("div.twitter-share-button a");
+ 	var twitterLinkElement = document.querySelector("twitter-share-button a");
 	twitterLinkElement.setAttribute("href",twitterHrefURL);
  }
 }
